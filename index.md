@@ -1,8 +1,8 @@
 ### 前段知识博客
 
 * #### JAVASCRIPT
-    * [资料](./javascript/generator.md)
+    * [forof iterator 及 generator](./javascript/generator.md)
 * #### HTML
-    * [资料](./javascript/material.md)
+    * [资料](./html/material.md)
 * #### CSS
-    * [资料](./javascript/material.md)
+    * [资料](./css/material.md)
