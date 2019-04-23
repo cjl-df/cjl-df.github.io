@@ -10,8 +10,10 @@
   
   **那么什么是可遍历对象那，这个就是下面的iterator要说的东西。
   
-  *for of 和 for in的却别：
-  *for of 依赖于对象是否可迭代（也就是是否实现了可迭代规范，见iterator）；for in 以来对象的属性是否可以枚举，详见[for in](https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Statements/for...in)和[属性的可枚举行](https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Enumerability_and_ownership_of_properties)**
+  **for of 和 for in的却别： **
+  ```
+  for of 依赖于对象是否可迭代（也就是是否实现了可迭代规范，见iterator）；for in 以来对象的属性是否可以枚举，详见[for in](https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Statements/for...in)和[属性的可枚举行](https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Enumerability_and_ownership_of_properties)
+  ```
 
 - ## iterator
 
