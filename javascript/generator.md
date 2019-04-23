@@ -12,8 +12,13 @@
   
   >3.for of 和 for in的却别?
   
-  **for of 依赖于对象是否可迭代（也就是是否实现了可迭代规范，见iterator）；for in 以来对象的属性是否可以枚举，详见[for in](https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Statements/for...in)和[属性的可枚举行](https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Enumerability_and_ownership_of_properties)**
+  **for of 依赖于对象是否可迭代（也就是是否实现了可迭代规范，见iterator）,并且对象是否实现了可迭代协议,也就是对象有Symbol.iterator属性；for in 以来对象的属性是否可以枚举，详见[for in](https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Statements/for...in)和[属性的可枚举行](https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Enumerability_and_ownership_of_properties)**
 
 - ## iterator
+    >1.[可迭代协议和迭代器协议](https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Iteration_protocols)
+    
+    可迭代协议就是为了让javascrip可以统一的用**for of**来访问遍历对象的属性;迭代器协议则定义了是那么是迭代器,也就是iterator.
+
+    >2.
 
 - ## generator
