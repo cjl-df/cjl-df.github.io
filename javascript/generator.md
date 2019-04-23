@@ -1,6 +1,6 @@
 - ## for of
 
-  >1. MDN 规范：
+  >1.MDN 规范：
 
   The for...of statement creates a loop iterating over iterable objects, including: built-in String, Array, Array-like objects (e.g., arguments or NodeList), TypedArray, Map, Set, and user-defined iterables. It invokes a custom iteration hook with statements to be executed for the value of each distinct property of the object.
 
