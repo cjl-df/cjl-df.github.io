@@ -16,9 +16,34 @@
 
 - ## iterator
     >1.[可迭代协议和迭代器协议](https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Iteration_protocols)
-    
+
     可迭代协议就是为了让javascrip可以统一的用**for of**来访问遍历对象的属性;迭代器协议则定义了是那么是迭代器,也就是iterator.
 
-    >2.
+    >2.我们对Object粗略的实现可迭代协议(也就是给Object[Symbol.iterator]实现迭代器)
+    
+    代码如下:
+    ```
+    Object.prototype[Symbol.iterator] = function(){
+        const objList = Object.entries(this)
+        let i = 0
+        return {
+            next:function(){
+                while(i<objList.length){
+                    const [key,value] = objList[i++]
+                    return  {value:{key,value},done:false} 
+                }
+                return {value:undefined,done:true}
+            }    
+        } 
+    }
+    ```
+    或者按照生成器的方式:
+    ```
+    Object.prototype[Symbol.iterator] = function * (){
+        for (const [key,value] of Object.entries(this)) {
+            yield {key,value}
+        }
+    }
+    ```
 
 - ## generator
