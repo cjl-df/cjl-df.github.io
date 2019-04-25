@@ -46,4 +46,17 @@
     }
     ```
 
+    这样我们就可以按照for of方式遍历对象:
+    ```
+    let obj = {
+        test:1,
+        tt:2,
+        sdfs:'dsfsd'
+    }
+
+    for (const {key,value} of obj) {
+        console.log(key,value)
+    }
+    ```
+
 - ## generator

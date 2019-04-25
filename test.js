@@ -2,11 +2,11 @@ function isGenerator(obj){
     return obj && typeof obj.next === 'function'
 }
 
-// Object.prototype[Symbol.iterator] = function * (){
-//     for (const [key,value] of Object.entries(this)) {
-//         yield {key,value}
-//     }
-// }
+Object.prototype[Symbol.iterator] = function * (){
+    for (const [key,value] of Object.entries(this)) {
+        yield {key,value}
+    }
+}
 
 Object.prototype[Symbol.iterator] = function(){
     const objList = Object.entries(this)
@@ -28,7 +28,6 @@ let obj = {
     tt:2,
     sdfs:'dsfsd'
 }
-
 
 for (const {key,value} of obj) {
     console.log(key,value)
