@@ -1,1 +1,1 @@
-资料
+1. [html基础文档](https://javascript.info/document)
