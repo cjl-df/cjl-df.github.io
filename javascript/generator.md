@@ -28,7 +28,7 @@
         let i = 0
         return {
             next:function(){
-                while(i<objList.length){
+                if(i<objList.length){
                     const [key,value] = objList[i++]
                     return  {value:{key,value},done:false} 
                 }
@@ -60,3 +60,64 @@
     ```
 
 - ## generator
+    >1. 定义
+
+    **生成器对象是由一个 generator function 返回的,并且它符合*可迭代协议和迭代器协议*。**
+    所以生成器对象也可以用for of遍历
+
+    >2. 判断generator 对象类型
+
+    ```
+    function isGenerator(obj){
+        return obj && typeof obj.next === 'function' && obj[Sysbol.iterator]
+    }
+    ```
+
+    >3. 案例
+    
+    3.1. 生成id
+    ```
+    function *idMaker (){
+    let id = 0;
+    while(true)
+        yield id++
+    }
+
+    const nextId = idMaker()
+
+    console.log(nextId.next())
+    console.log(nextId.next())
+    console.log(nextId.next())
+    ```
+
+    这儿用for of循环要注意加限制条件
+    ```
+    for (const iterator of nextId) {
+        if(iterator<10)
+            console.log(iterator)
+        else return 
+    }
+    ```
+
+    3.2 菲纳波切数列
+    ```
+
+    function * fnbq(){
+        let x=0, y=1
+        while(true){
+            yield y;
+            [x,y] = [y,x+y];
+        }
+    }
+    const fnbqValue = fnbq()
+
+    console.log(fnbqValue.next())
+    console.log(fnbqValue.next())
+    console.log(fnbqValue.next())
+    ```
+- ## 总结
+    这儿只需明白下面几个定义即可
+    1.可枚举属性定义
+    2.可迭代协议
+    3.迭代器协议
+    4.生成器定义
