@@ -151,9 +151,9 @@
     ```
 
     **Promise原型连中的then新增pengding判断**
-    
+
     ```
-        if(that.status === PENDING){
+    if(that.status === PENDING){
         return newPromise = new Promies((resovle,reject)=>{
             that.onFulfiledCallbacks.push((value)=>{       //这儿部直接push onFulfiled 1.不清楚onFulfiled执行情况和返回的是不是promise
                 try {
