@@ -147,4 +147,25 @@
     ```
 
     **Promise原型连中的then新增pengding判断**
-    
+    ```
+        if(that.status === PENDING){
+        return newPromise = new Promies((resovle,reject)=>{
+            that.onFulfiledCallbacks.push((value)=>{       //这儿部直接push onFulfiled 1.不清楚onFulfiled执行情况和返回的是不是promise
+                try {
+                    let x = onFulfiled(value)
+                    //x 为promise情况先不考虑
+                } catch (error) {
+                    reject(error)
+                }
+            })
+            that.onRejectedCallbacks.push((reason)=>{
+                try{
+                    let x = onRejected(reason);
+                    //x 为promise情况先不考虑
+                }catch(error){
+                    reject(error)
+                }
+            })
+        })
+    }
+    ```
