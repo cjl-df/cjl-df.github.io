@@ -21,6 +21,7 @@
     ```
 
     * 通过resolve,reject来维护status,并且resolve获取值，reject获取失败原因，修改后的promise,(**遗留问题1：value为promise,后面解答**)
+
     ```
     function Promies(){
         this.status = PENDING;
@@ -56,6 +57,7 @@
     ```
 
     * excutor 要调用resolve和reject，所以promise内部调用excutor，要将两个函数传给excotor,promise新增如下
+
     ```
     try {
         excutor(resovle,reject)
@@ -67,6 +69,7 @@
 * #### *promise对象我们按照规范，大体写出来了，但是我们怎么调用promise的值那，也就是怎么解决以前的回调地狱*
 
     * 按照规范当然是调用then,因为then是Promise所有对象公用的，所以放在Promise原型连上,then的参数就是我们的回调函数(onFulfilled,onRejected),也就是ajax中的onsuccess,onerror.(**遗留问题2：value为promise,后面解答**)
+
     ```
     Promies.prototype.then = function(onFulfiled,onRejected){
         let that = this; //缓存当前调用then的promise对象实例
@@ -104,6 +107,7 @@
 
     * 但是大多数常规情况下我们都是在还处于pending的时候就调用then，这个时候我们的回调函数不能立即执行，要等待pengding状态结束后才执行；所以我们就需要Promise对象中维护一个回调函数的数组，来维护该promise多次调用then，传入的回调函数，并等待pending状态结束后执行。
     **修改后的promise**
+
     ```
     function Promies(excutor){
         this.status = PENDING;
@@ -147,6 +151,7 @@
     ```
 
     **Promise原型连中的then新增pengding判断**
+    
     ```
         if(that.status === PENDING){
         return newPromise = new Promies((resovle,reject)=>{
