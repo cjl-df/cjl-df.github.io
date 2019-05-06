@@ -3,7 +3,7 @@
 * #### JAVASCRIPT
     * [forof iterator 及 generator](./javascript/generator.md)
 
-    * [promise](./javascript/async.md)
+    * [promise](./javascript/Promise.md)
     
     * [async和await](./javascript/asyncAndAwait.md)
     
