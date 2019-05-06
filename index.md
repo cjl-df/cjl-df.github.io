@@ -3,9 +3,13 @@
 * #### JAVASCRIPT
     * [forof iterator 及 generator](./javascript/generator.md)
 
-    * [promise async和await](./javascript/async.md)
+    * [promise](./javascript/async.md)
+    
+    * [async和await](./javascript/asyncAndAwait.md)
+    
 * #### HTML
     * [资料](./html/material.md)
+    
 * #### CSS
     * [资料](./css/material.md)
 
