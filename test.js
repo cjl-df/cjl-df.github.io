@@ -11,7 +11,11 @@ function Promies(excutor){
     let that = this;   //reslve,reject要修改promise实例对象的状态，要缓存下来
 
     function resovle(value){
-        //先不考虑value为promise
+        //value为promise
+        if(value instanceof Promies){
+            return value.then(resovle,reject)   //这儿要return,因为要将该promise对象状态，交给value来维护
+        }
+
         setTimeout(()=>{
             if(that.status === PENDING){
                 that.status = FULFILLED;
@@ -95,3 +99,74 @@ Promies.prototype.then = function(onFulfiled,onRejected){
         })
     }
 }
+
+function resovlePromise(promise2,x, resovle,reject){
+    if(promise2 === x )
+        return reject(new TypeError('循环引用'))
+
+    let called= false
+
+    if( x instanceof Promies){
+        if(x.status === PENDING){
+            x.then(y=>{
+                resovlePromise(promise2,y,resovle,reject)
+            })
+        }else{
+            x.then(resovle,reject)
+        }
+    }else if(x != null && ((typeof x === 'object') || (typeof x === 'function'))){
+        //是否具有then函数
+        try {
+            let then = x.then;
+            if(typeof then === 'function'){
+                then.call(x,y=>{
+                    if(called) return;
+                    called = true;
+                    resovlePromise(promise2,y,resovle,reject)
+                },reason=>{
+                    if(called) return
+                    called = true;
+                    reject(reason)
+                })
+            }else{
+                resovle(x)
+            }
+        } catch (error) {
+            if(called) return;
+            called = true
+            resovle(x)
+        }
+    }else{
+        resovle(x)
+    }
+}
+
+
+promise.all = function(promises){
+    return new Promies((resovle,reject)=>{
+        let done = gen(promises.length,resovle)
+        promises.forEach((promise,index)=>{
+            promise.then((value)=>{
+                done(index,value)
+            },reject)
+        })
+    })
+}
+
+function gen(length,resovle){
+    let count = 0;
+    let values = [];
+    return function(i,value){
+        values[i] = value
+        if(++count === length)
+            resovle(values)
+    }
+}
+
+Promies.race = function(promises){
+    return new Promies((resovle,reject)=>{
+        promises.forEach((promise)=>{
+            promise.then(resovle,reject)
+        })
+    })
+}   
