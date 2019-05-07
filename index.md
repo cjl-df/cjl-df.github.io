@@ -7,6 +7,8 @@
     
     * [async和await](./javascript/asyncAndAwait.md)
     
+    * [模块](./javascript/module.md)   
+    
 * #### HTML
     * [资料](./html/material.md)
     
