@@ -40,6 +40,8 @@
     解析过程中，如果遇到<link href="...">和<script src="...">这种外链加载 CSS 和 JS 的标签，
     浏览器会异步下载，下载过程和上文中下载 HTML 的流程一样。只不过，这里下载下来的字符串是 CSS 或者 JS 格式的。
     
+    所有详细步骤都已经略去，渲染完毕后就是load事件了    
+    
   * 渲染流程阻塞
      
     *常把css放在头部（保证渲染），把js放在底部（保证非阻塞）。*
@@ -68,5 +70,15 @@
           对script标签推荐这个属性，如google analytics所分析。
           
           
+### load事件与DOMContentLoaded事件的先后
 
-    
+   *上面提到，渲染完毕后会触发load事件，那么你能分清楚load事件与DOMContentLoaded事件的先后么？
+   *很简单，知道它们的定义就可以了：
+
+   * 当 DOMContentLoaded 事件触发时，仅当DOM加载完成，不包括样式表，图片。
+    (譬如如果有async加载的脚本就不一定完成)
+
+   * 当 onload 事件触发时，页面上所有的DOM，样式表，脚本，图片都已经加载完成了。
+    （渲染完毕了）
+
+   **所以，顺序是：DOMContentLoaded -> load    
