@@ -18,7 +18,7 @@
   
         工作方式：多进程
         
-    ![Yaktocat的图片](https://www.baidu.com/link?url=E_pOylnd2D8bFXrSh6BoJ326ajuLR3Is5--sZpNhe7v1JqNdpWbQFaM_cJmmj2H-AD0iEbTrQCqYosJx7RVMpBWY4WGsr_mtLNegtbWR3uBtbxE5lz8_JS_7uq28ueymoBMBm0XbuyMVbT49qHki0Mn1dSCOkcKQQGWEGV3Gbe9ScGKdFb1ucSz2jKx8klMTIt7t38KgvOUs7T386oH0tuUCIeuA7uU6PC77RQ2Cx0GL9WhWVC8epoL9XnnYZ3i3KvOJ0rKWhOw3WPx94s-vfqsYE9B74bypFDvIKq1nlB_l467shmpC9NdxOE_IAxHv9qrhNzZkzDmkCYJmf5QxpoGH6KcVPPhp-QZAfq-IGikmM3mI2eb1SOMBLTkJlZMh0BYtlqRatWK6I4APTjln7CyFdf9z5m6LtkFfkAsfy2LV7nZRK2EvCC0q9cKUTx5Wvt1p-TqO-uRF2SNxNm36cvtrHiiPe8Y5Y0KW42BK9FWc3AA37zvNGw4EJ_AcT789hWRvgzDczVSLb1npyKrPsq&wd=&eqid=f5fd47220002190f000000045cd27b0c）
+    ![test](./test.png）
 
   * 组成
   
@@ -113,3 +113,5 @@
   
          2 将检测到状态变更时，如果设置有回调函数，异步线程就产生状态变更事件，将这个回调再放入事件队列中。
            再由JavaScript引擎执行。
+           
+    ![test](./test.png）    
