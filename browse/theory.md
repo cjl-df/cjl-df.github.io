@@ -17,6 +17,8 @@
         深层结构：下边主要介绍———渲染引擎及JS引擎
   
         工作方式：多进程
+        
+    ![原理](https://sponsor.segmentfault.com/ck.php?oaparams=2__bannerid=140__zoneid=1__cb=b431cadc91__oadest=https%3A%2F%2Fke.qq.com%2FadActivity.html%3Fname%3Drengwuxian02%26utm_source%3Dsf%26utm_medium%3Dwebsite%26utm_campaign%3Dplus_3%26utm_content%3Dblue)
 
   * 组成
   
