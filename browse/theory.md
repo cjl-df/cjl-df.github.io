@@ -18,7 +18,7 @@
   
         工作方式：多进程
         
-    ![test](./test.png）
+    ![test](https://image-static.segmentfault.com/168/527/1685277292-5a65972377cb0）
 
   * 组成
   
