@@ -4,15 +4,15 @@
 
   * #### 基本
   
-  **分类**：现在主要有五大主流浏览器: Chrome, Internet Explorer, Firefox, Safari and Opera.移动端上是Android Browser,       iPhone, Opera Mini and Opera Mobile, UC Browser, the Nokia S40/S60 browsers,除了Opera，这些浏览器都是基于      WebKit内核的（目前可能有变）。
+        **分类**：现在主要有五大主流浏览器: Chrome, Internet Explorer, Firefox, Safari and Opera.移动端上是Android Browser,       iPhone, Opera Mini and Opera Mobile, UC Browser, the Nokia S40/S60 browsers,除了Opera，这些浏览器都是基于      WebKit内核的（目前可能有变）。
   
-  **功能** ：根据W3C制定的一系列规范，从服务端请求并渲染资源
+        **功能** ：根据W3C制定的一系列规范，从服务端请求并渲染资源
   
-  **普遍外观**：地址栏，前进后退，书签，刷新及取消，主页，插件
+        **普遍外观**：地址栏，前进后退，书签，刷新及取消，主页，插件
   
-  **深层结构**：下边主要介绍———渲染引擎及JS引擎
+        **深层结构**：下边主要介绍———渲染引擎及JS引擎
   
-  **工作方式**：多进程
+        **工作方式**：多进程
 
   * #### 组成
   
