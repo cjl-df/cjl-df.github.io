@@ -27,8 +27,8 @@
    
      * 解析html建立dom树
     
-     * 解析css构建render树（将CSS代码解析成树形的数据结构，然后结合DOM合并成render树）
-   
+     * 解析css构建render树（将CSS代码解析成树形的数据结构，然后结合DOM合并成render树),也就是将css解析成CSSOM
+     
      * 布局render树（Layout/reflow），负责各元素尺寸、位置的计算
    
      * 绘制render树（paint），绘制页面像素信息
