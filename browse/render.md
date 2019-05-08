@@ -46,7 +46,12 @@
     
     *css阻塞:默认情况下，CSS 被视为阻塞渲染的资源，这意味着浏览器将不会渲染任何已处理的内容，直至 CSSOM
     *构建完毕。请务必精简您的 CSS，尽快提供它，并利用媒体类型和查询来解除对渲染的阻塞。*
-
+    
+    **link标签** *不会阻塞dom解析的，但是会阻塞paint绘制render树，(当然如果是样式表也会阻塞cssom)*  
+    
+    **script标签** *肯定是会阻塞dom解析的，假如浏览器遇到它，会下载它并执行里面的内容，才去继续解析下面的dom，
+    *解决办法有两个，一是在script标签上加上async,一是使用createElement动态创建script*
+    
     * Normal execution <script>
         
           浏览器默认：当执行script时解析html代码暂停。对于慢服务和重script的情况意味着webpage呈现将被延后。
