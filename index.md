@@ -26,4 +26,4 @@
 
     * [浏览器概述、多进程简介及WebWorker与SharedWorker](./browse/theory.md)
     
-    * [浏览器渲染进程](./browse/render.md)
+    * [浏览器渲染进程,渲染、阻塞及load相关事件](./browse/render.md)
