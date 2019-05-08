@@ -4,7 +4,8 @@
 
   * 概述
   
-        分类：   现在主要有五大主流浏览器: Chrome(webkit->Blink), Internet Explorer(Trident), Firefox(Geoko),                   Safari(webkit) and Opera(webkit->blink).
+        分类：   现在主要有五大主流浏览器: Chrome(webkit->Blink), Internet Explorer(Trident), Firefox(Geoko), 
+                Safari(webkit) and Opera(webkit->blink).
                 移动端上是Android Browser,iPhone, Opera Mini and Opera Mobile, UC Browser, 
                 the Nokia S40/S60 browsers,除了Opera，这些浏览器都是基于
                 WebKit内核的（目前可能有变）。
@@ -19,11 +20,13 @@
 
   * 组成
   
-        用户界面（User Interface)  ：包括地址栏、前进/后退按钮、书签菜单等。除了浏览器主窗口显示的您请求的页面外，其他                                        显示的各个部分都属于用户界面。
+        用户界面（User Interface)  ：包括地址栏、前进/后退按钮、书签菜单等。除了浏览器主窗口显示的您请求的页面外，其他
+                                   显示的各个部分都属于用户界面。
   
         浏览器引擎（Browser engine）：在用户界面和呈现引擎之间传送指令。
   
-        呈现引擎（Rendering engine）：负责显示请求的内容。如果请求的内容是 HTML，它就负责解析 HTML 和 CSS 内容，                                           并将解析后的内容显示在屏幕上。
+        呈现引擎（Rendering engine）：负责显示请求的内容。如果请求的内容是 HTML，它就负责解析 HTML 和 CSS 内容,
+                                    并将解析后的内容显示在屏幕上。
   
         网络（Networking） ：         用于网络调用，比如 HTTP 请求。其接口与平台无关，并为所有平台提供底层实现。
   
