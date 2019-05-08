@@ -19,4 +19,6 @@
     * [路由](./router/index.md)
 
 * #### browse(浏览器)
-    * [浏览器工作原理](./browse/theory.md)
+    * [浏览器概述及多进程简介](./browse/theory.md)
+    
+    * [浏览器渲染进程](./browse/render.md)
