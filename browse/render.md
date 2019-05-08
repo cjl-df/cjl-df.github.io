@@ -72,8 +72,8 @@
           
 ### load事件与DOMContentLoaded事件的先后
 
-   *上面提到，渲染完毕后会触发load事件，那么你能分清楚load事件与DOMContentLoaded事件的先后么？
-   *很简单，知道它们的定义就可以了：
+   *上面提到，渲染完毕后会触发load事件，那么你能分清楚load事件与DOMContentLoaded事件的先后么？*
+   *很简单，知道它们的定义就可以了：*
 
    * 当 DOMContentLoaded 事件触发时，仅当DOM加载完成，不包括样式表，图片。
     (譬如如果有async加载的脚本就不一定完成)
