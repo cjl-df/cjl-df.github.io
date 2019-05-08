@@ -81,4 +81,4 @@
    * 当 onload 事件触发时，页面上所有的DOM，样式表，脚本，图片都已经加载完成了。
     （渲染完毕了）
 
-   **所以，顺序是：DOMContentLoaded -> load    
+   **所以，顺序是：DOMContentLoaded -> load**    
