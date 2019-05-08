@@ -115,3 +115,6 @@
            再由JavaScript引擎执行。
            
     ![test](./test.png）    
+    
+    
+### 2. Browser进程和浏览器内核（Renderer进程）的通信过程
