@@ -4,7 +4,7 @@
 
   * 概述
   
-        分类：   现在主要有五大主流浏览器: Chrome, Internet Explorer, Firefox, Safari and Opera.
+        分类：   现在主要有五大主流浏览器: Chrome(webkit->Blink), Internet Explorer(Trident), Firefox(Geoko),                   Safari(webkit) and Opera(webkit->blink).
                 移动端上是Android Browser,iPhone, Opera Mini and Opera Mobile, UC Browser, 
                 the Nokia S40/S60 browsers,除了Opera，这些浏览器都是基于
                 WebKit内核的（目前可能有变）。
