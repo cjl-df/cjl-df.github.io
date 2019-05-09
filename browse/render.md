@@ -63,16 +63,16 @@
     **解决办法有两个，一是在script标签上加上async或defer,一是使用createElement动态创建script;**
     **关于scrip标签具体如下**
     
-    * Normal execution <script>
+    * Normal execution `<script>`
         
           浏览器默认：当执行script时解析html代码暂停。对于慢服务和重script的情况意味着webpage呈现将被延后。
 
-    * Deferred execution <script defer>
+    * Deferred execution `<script defer>`
 
           简而言之：推迟script执行直到html解析结束。该属性的好处就是DOM渲染友好，对于你的script。
           然而，并非每个浏览器支持该属性，故不要指望它！
 
-    * Asynchronous execution <script async>
+    * Asynchronous execution `<script async>`
 
           不用管script何时好？async对于两个都是最好的：html解析可能持续且script将被执行一旦ready。
           对script标签推荐这个属性，如google analytics所分析。
@@ -90,3 +90,10 @@
     （渲染完毕了）
 
    **所以，顺序是：DOMContentLoaded -> load**    
+### 4.浏览器重绘(repaint)重排(reflow)与优化[浏览器机制]
+
+   * 渲染
+
+      网页生成的时候，至少会渲染一次。
+      在用户访问的过程中，还会不断重新渲染
+      重新渲染需要重复之前的第三步(重新生成布局)+第五步(重新绘制)或者只有第四个步(重新绘制)。
