@@ -45,9 +45,9 @@
 
     * 流程如下图：
 
-      ![渲染基本流程](../assets/image/browser-flow.png)
+   ![渲染基本流程](../assets/image/browser-flow.png)
 
-      ![浏览器渲染引擎架构图](../assets/image/browser-renderDetail.png)
+   ![浏览器渲染引擎架构图](../assets/image/browser-renderDetail.png)
     
   * 渲染流程阻塞
      
