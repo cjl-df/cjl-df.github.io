@@ -280,4 +280,31 @@
     }   
     ```
 
-    
+    ```
+    Promise.prototype.catch = function(onRejected){
+        return this.then(null,onRejected)
+    }
+
+    Promise.resovle =function(value){
+        return new Promise(resolve=>resolve(value))
+    }
+
+    Promise.reject = function(reason){
+        return new Promise(reject=>reject(reason))
+    }
+
+    Promise.deferred = function(){
+        let defer = {}
+        defer.promise = new Promise((resovle,reject)=>{
+            defer.resolve = resovle;
+            defer.reject = reject
+        })
+        return defer;
+    }
+
+    try{
+        module.exports = Promise
+    }catch(e){
+        console.log(e)
+    }
+    ```
