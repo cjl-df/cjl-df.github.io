@@ -18,7 +18,8 @@
   
         工作方式：多进程
         
-    ![test](https://image-static.segmentfault.com/168/527/1685277292-5a65972377cb0）
+    ![浏览器架构图](../assets/image/browser.png)
+
 
   * 组成
   
@@ -114,7 +115,7 @@
          2 将检测到状态变更时，如果设置有回调函数，异步线程就产生状态变更事件，将这个回调再放入事件队列中。
            再由JavaScript引擎执行。
            
-    ![test](./test.png）    
+    ![浏览器内核渲染引擎](../assets/image/browser-renderEngine.png)    
     
 ### 2. Browser进程和浏览器内核（Renderer进程）的通信过程
  
@@ -135,9 +136,7 @@
         
    * 最后Render进程将结果传递给Browser进程
      
-   * Browser进程接收到结果并将结果绘制出来
-   
-   ![test](./test.png）     
+   * Browser进程接收到结果并将结果绘制出来    
 
 
 ### 3. 梳理浏览器内核中线程之间的关系
