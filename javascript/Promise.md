@@ -280,6 +280,7 @@
     }   
     ```
 
+<<<<<<< HEAD:javascript/async.md
     ```
     Promise.prototype.catch = function(onRejected){
         return this.then(null,onRejected)
@@ -310,3 +311,6 @@
     ```
 
 按照掘金上的一篇文章写的
+=======
+    
+>>>>>>> 8217db4ad6c201681dbb5b7c1f205937275d9384:javascript/Promise.md
