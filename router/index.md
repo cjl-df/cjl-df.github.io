@@ -114,9 +114,9 @@
       <section class="warp">
         <div class="nav">          
             <ul>
-                  <li><a onclick="linkTo('/index')" href="javascript:void(0)" data-path="index">首页</a></li> 
+                  <li><a onclick="linkTo('/index')" href="javascript:void(0)" data-path="index">首页</a>                      </li> 
                   <li><a onclick="linkTo('/news')" href="javascript:void(0)" data-path="news">新闻</a></li>
-                  <li><a onclick="linkTo('/about')" href="javascript:void(0)" data-path="about">关于</a></li>
+                  <li><a onclick="linkTo('/about')" href="javascript:void(0)" data-path="about">关于</a>                     </li>
             </ul>
         </div>
         <div id="router" class="router">
@@ -125,7 +125,7 @@
       </section>
       ```
 
-    * history路由实现：
+   * history路由实现：
 
       ```
       <script >
@@ -152,7 +152,7 @@
       </script>
       ```
 
-    * 总结：
+   * 总结：
       
       1.无论是HASH还是History,都是属于但也面应用，
       2.因为切换路由，并不发送请求，所有路由表现的就像div以下，其实一个路由，就是一个div
