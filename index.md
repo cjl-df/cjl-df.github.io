@@ -10,6 +10,8 @@
     
     * [module(模块)](./javascript/module.md)   
     
+    * [class,extends及static](./javascript/oop.md)
+    
 * #### HTML
 
     * [资料](./html/material.md)
