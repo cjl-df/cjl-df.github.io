@@ -1,0 +1,1 @@
+javascript 面向对象编程，class,extends及static
