@@ -34,19 +34,20 @@
           2.函数不通过new调用，就喝普通函数一样，默认返回undefined。
           
           3.我们手写实现new：
-          ```
-          function objectFactory() {
-            var obj = new Object();
+          
+         ```
+         function objectFactory() {
+           var obj = new Object();
 
-            const constructor = [].shift.call(arguments);
+           const constructor = [].shift.call(arguments);
 
-            obj.__proto__ = constructor.prototype;
+           obj.__proto__ = constructor.prototype;
 
-            let entry = constructor.apply(obj, arguments);
+           let entry = constructor.apply(obj, arguments);
 
-            return typeof entry === 'object' ? entry : obj;
-          }
-          ```
+           return typeof entry === 'object' ? entry : obj;
+         }
+         ```
           
          
   * class
