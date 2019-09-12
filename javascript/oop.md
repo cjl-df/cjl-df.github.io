@@ -83,7 +83,7 @@
 
     * 通过上面的我们可以自然的得出下面的结论：
 
-      * static 子类可以继承，并且只能用类直接调用
+      * static 是类的静态属性，实例是访问不到的，自然也不再原型对象里，只不过是构造函数的一个属性，所以只能有类名直接调用，和函数是通用的
 
         ```
         class Test {
@@ -104,8 +104,8 @@
 
         const child = new Child()
 
-        console.log(Child.username)
-        Child.outPut()
+        console.log(child.username)
+        child.outPut()
         ```
       * 子类实例的原型链继承属性__proto__都是自己的实例，而自己的实例来源以自己的prototype对象；portotype属性的__proto__则是父类对象的实例，所以这儿的原型链继承是通过实例继承
 
