@@ -12,7 +12,7 @@
     
     * [原型链之class,extends及static](./javascript/oop.md)
     
-    * [原型链之函数，Function](./javascript/function.md)    
+    * [原型链之函数,Function](./javascript/function.md)    
     
     * [Object and Reflect](./javascript/ObjectAndReflect.md)   
     
