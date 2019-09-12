@@ -10,7 +10,9 @@
     
     * [module(模块)](./javascript/module.md)   
     
-    * [原型链,class,extends及static](./javascript/oop.md)
+    * [原型链之class,extends及static](./javascript/oop.md)
+    
+    * [原型链之函数，Function](./javascript/function.md)    
     
     * [Object and Reflect](./javascript/ObjectAndReflect.md)   
     
