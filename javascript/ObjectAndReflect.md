@@ -56,8 +56,9 @@ Object 构造函数为给定值创建一个对象包装器。如果给定值是 
 
   ##### `Object.__proto__`
 
-  Object 是个函数，他的原型链自然是 Function 对象的原型；和其他函数一样，从 Function 的原型中继承到原型链的属性自然包括 apply,call,bind,arguments,toString 等属性；**这儿我们要注意函数作为构造函数时的原型对象也就是函数的 prototype ，则默认是一个包含 constructor 属性的对象,而这个对象的原型链则是 Object 函数的原型对象 **
-  区分如下图：
+  Object 是个函数，他的原型链自然是 Function 对象的原型；和其他函数一样，从 Function 的原型中继承到原型链的属性自然包括 apply,call,bind,arguments,toString 等属性；**这儿我们要注意函数作为构造函数时的原型对象也就是函数的 prototype ，则默认是一个包含 constructor 属性的对象,而这个对象的原型链则是 Object 函数的原型对象**
+ 区分如下图：
+ 
   ![函数对象的原型对象和函数对象的原型链](../assets/image/javascript/class/objectPrototypeAndProto.png)
   <br />
 
