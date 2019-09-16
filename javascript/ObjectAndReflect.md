@@ -12,7 +12,7 @@ Object 构造函数为给定值创建一个对象包装器。如果给定值是 
 
   ##### `Object.length 值为 1`
 
-  ##### 1.Object 函数对象的 API,大多也是 Reflect 对象的方法
+  ##### `Object 函数对象的 API,大多也是 Reflect 对象的方法`
 
   - Object.assign()
     通过复制一个或多个对象来创建一个新的对象。
