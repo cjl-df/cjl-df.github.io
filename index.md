@@ -20,6 +20,8 @@
 
   - [javascript 中不可变对象以及 proxy](./javascript/constObj.md)
 
+  - [javascript 装饰器](./javascript/decorator.md)
+
 - #### HTML
 
   - [资料](./html/material.md)
