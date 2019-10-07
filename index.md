@@ -1,54 +1,57 @@
 ### 前段知识博客
 
-* #### JAVASCRIPT
+- #### JAVASCRIPT
 
-    * [forof iterator 及 generator](./javascript/generator.md)
+  - [forof iterator 及 generator](./javascript/generator.md)
 
-    * [promise](./javascript/Promise.md)
-    
-    * [async和await](./javascript/asyncAndAwait.md)
-    
-    * [module(模块)](./javascript/module.md)   
-    
-    * [原型链之class,extends及static](./javascript/oop.md)
-    
-    * [原型链之函数,Function](./javascript/function.md)    
-    
-    * [Object and Reflect](./javascript/ObjectAndReflect.md)   
-    
-    * [javascript中不可变对象以及proxy](./javascript/constObj.md)
-    
-* #### HTML
+  - [promise](./javascript/Promise.md)
 
-    * [资料](./html/material.md)
-    
-    * [meta标签](./html/metaData.md)    
-    
-* #### CSS
+  - [async 和 await](./javascript/asyncAndAwait.md)
 
-    * [资料](./css/material.md)
+  - [javascript 实现同步](./javascript/javascriptAsync.md)
 
-* #### router(路由)
+  - [module(模块)](./javascript/module.md)
 
-    * [路由](./router/index.md)
+  - [原型链之 class,extends 及 static](./javascript/oop.md)
 
-* #### browse(浏览器)
+  - [原型链之函数,Function](./javascript/function.md)
 
-    * [浏览器概述、多进程简介及WebWorker与SharedWorker](./browse/theory.md)
-    
-    * [浏览器渲染进程,渲染、阻塞及load相关事件](./browse/render.md)
-    
-* #### 小程序
+  - [Object and Reflect](./javascript/ObjectAndReflect.md)
 
-    * [微信小程序](./littlerApp/wxapp.md)
-    
-    * [支付宝小程序](./littlerApp/aliapp.md)
-    
-* #### PWA(Progressive Web App)
+  - [javascript 中不可变对象以及 proxy](./javascript/constObj.md)
 
-* #### fluter
+- #### HTML
 
-* #### react-native 和react
-    * [componentWillUnmount中常做的处理](./react/unmount.md)
-    
-    * [react context Api](./react/api_context.md)
+  - [资料](./html/material.md)
+
+  - [meta 标签](./html/metaData.md)
+
+- #### CSS
+
+  - [资料](./css/material.md)
+
+- #### router(路由)
+
+  - [路由](./router/index.md)
+
+- #### browse(浏览器)
+
+  - [浏览器概述、多进程简介及 WebWorker 与 SharedWorker](./browse/theory.md)
+
+  - [浏览器渲染进程,渲染、阻塞及 load 相关事件](./browse/render.md)
+
+- #### 小程序
+
+  - [微信小程序](./littlerApp/wxapp.md)
+
+  - [支付宝小程序](./littlerApp/aliapp.md)
+
+- #### PWA(Progressive Web App)
+
+- #### fluter
+
+- #### react-native 和 react
+
+  - [componentWillUnmount 中常做的处理](./react/unmount.md)
+
+  - [react context Api](./react/api_context.md)
