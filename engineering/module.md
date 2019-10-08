@@ -2,7 +2,7 @@
 
 模块化的开发方式可以提高代码复用率，方便进行代码的管理。通常一个文件就是一个模块，有自己的作用域，只向外暴露特定的变量和函数。目前流行的 js 模块化规范有 CommonJS、AMD、CMD 以及 ES6 的模块系统。参见阮一峰老师的文章 module-loader 。
 
-##### 1. CommonJS
+#### 1. CommonJS
 
 <hr/>
 Node.js 是 commonJS 规范的主要实践者，它有四个重要的环境变量为模块化的实现提供支持：module、exports、require、global。实际使用时，用 module.exports 定义当前模块对外输出的接口（不推荐直接用 exports），用 require 加载模块。
@@ -29,7 +29,7 @@ http.createService(...).listen(3000);
 
 commonJS 用同步的方式加载模块。在服务端，模块文件都存在本地磁盘，读取非常快，所以这样做不会有问题。但是在浏览器端，限于网络原因，更合理的方案是使用异步加载。**（因此在 webpack 或者服务端的代码中，我们一般都是通过 require 来引入模块）**
 
-##### 2.AMD 和 require.js
+#### 2.AMD 和 require.js
 
 <hr/>
 AMD 规范采用异步方式加载模块，模块的加载不影响它后面语句的运行。所有依赖这个模块的语句，都定义在一个回调函数中，等到加载完成之后，这个回调函数才会运行。这里介绍用 require.js 实现 AMD 规范的模块化：用 require.config()指定引用路径等，用 define()定义模块，用 require()加载模块。
@@ -89,7 +89,7 @@ require(['jquery', 'math'],function($, math){
 });
 ```
 
-##### 3.CMD 和 sea.js
+#### 3.CMD 和 sea.js
 
 <hr/>
 require.js 在申明依赖的模块时会在第一之间加载并执行模块内的代码：
@@ -142,7 +142,7 @@ var sum = math.add(1+2);
 });
 ```
 
-##### 4.ES6 Module
+#### 4.ES6 Module
 
 <hr/>
 ES6 在语言标准的层面上，实现了模块功能，而且实现得相当简单，旨在成为浏览器和服务器通用的模块解决方案。其模块功能主要由两个命令构成：export 和 import。export 命令用于规定模块的对外接口，import 命令用于输入其他模块提供的功能。
@@ -177,7 +177,7 @@ ele.textContent = math.add(99 + math.basicNum);
 
 ES6 的模块不是对象，import 命令会被 JavaScript 引擎静态分析，在编译时就引入模块代码，而不是在代码运行时加载，所以无法实现条件加载。也正因为这个，使得静态分析成为可能。
 
-##### 5. ES6 模块与 CommonJS 模块的差异
+#### 5. ES6 模块与 CommonJS 模块的差异
 
 <hr/>
 
