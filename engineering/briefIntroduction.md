@@ -44,6 +44,7 @@
 
     - 发布
         正式发布上线
+        至于这也发布部署等流程可以参考这边博客，说的挺好的[大公司里怎样开发和部署前端代码](https://www.runoob.com/w3cnote/how-to-develop-and-deploy-front-end-code.html)
     <br>
 - 项目模块化、组件化
     我们前段资源一般都会打包未静态资源，分为图片，js,css,这些都会在html里面引用到
