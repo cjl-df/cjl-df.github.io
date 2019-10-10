@@ -24,7 +24,7 @@
   
   - [javascript 作用域、堆栈、this](./javascript/scopeAndStack.md)
   
-  - [javascript 作用域、堆栈、this](./javascript/throttleAnddobounce.md  )  
+  - [javascript 防抖、节流](./javascript/throttleAnddobounce.md  )  
   
 - #### HTML
 
