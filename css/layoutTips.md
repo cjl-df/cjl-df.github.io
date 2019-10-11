@@ -2,7 +2,7 @@
 
 1.编写代码
 
-    ```
+   ```
     (function() {
         var style = document.getElementById('_outline');
         if (style) {
@@ -14,7 +14,7 @@
         document.body.appendChild(style);
         }
     })();
-    ```
+   ```
 
 2.点击收藏，在收藏的网址中填写如下
   
