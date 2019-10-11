@@ -1,6 +1,6 @@
 ## css 中的图形
 
-#### css 中基础图形 basic-shape
+### css 中基础图形 basic-shape
 
 basic-shape是一种表现基础图形的 CSS 数据类型，作用于 clip-path 与 shape-outside 属性中。
 
@@ -65,7 +65,7 @@ basic-shape是一种表现基础图形的 CSS 数据类型，作用于 clip-path
 
   <br>
 
-#### css 裁剪路径 clip-path
+### css 裁剪路径 clip-path
 
 clip-path CSS 属性可以创建一个只有元素的部分区域可以显示的剪切区域。区域内的部分显示，区域外的隐藏。剪切区域是被引用内嵌的 URL 定义的路径或者外部 svg 的路径，或者作为一个形状例如 circle().。clip-path 属性代替了现在已经弃用的剪切 clip 属性。
 
@@ -74,7 +74,7 @@ clip-path CSS 属性可以创建一个只有元素的部分区域可以显示的
 - 比如： `clip-path: polygon(50% 0, 100% 50%, 50% 100%, 0 50%);`
   <br>
 
-#### css 裁剪路径 shape-outside
+### css 裁剪路径 shape-outside
 
 shape-outside 的 CSS 属性定义了一个可以是非矩形的形状，相邻的**内联**内容应围绕该形状进行包装。 默认情况下，内联内容包围其边距框; shape-outside 提供了一种自定义此包装的方法，可以将文本包装在复杂对象周围而不是简单的框中。
 
