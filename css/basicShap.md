@@ -42,35 +42,6 @@
     **path 是一个 svg 图片的路径，这个图形就是这个 svg 图片 的边界**
   - 案例：
 
-  html:
-
-  ```html
-  <svg>
-    <clipPath id="myPath">
-      <path
-        d="M82.44294954150537,38.19660112501052 A200 200 0 0 1 317.55705045849464 38.19660112501052 L200 200"
-      ></path>
-    </clipPath>
-  </svg>
-  <div class="sector"></div>
-  ```
-
-  css 样式表
-
-  ```css
-  <style>
-    .sector {
-      height: 100px;
-      width: 350px;
-      clip-path: url(#myPath);
-      background-size: contain !important;
-      background-repeat: no-repeat;
-      background: url('https://ss0.bdstatic.com/70cFvHSh_Q1YnxGkpoWK1HF6hhy/it/u=1551039200,1108067788&fm=26&gp=0.jpg');
-    }
-  </style>
-
-  ```
-
   <br>
 
 #### css 裁剪路径 clip-path
@@ -90,42 +61,6 @@ shape-outside 的 CSS 属性定义了一个可以是非矩形的形状，相邻�
 
 - 案例 实现文字环绕图片
 
-html:
 
-```html
-<div>
-  <div class="image"></div>
-  <p class="title">王院长</p>
-  <p class="text">
-    毕业于上海交通大学，曾任合肥工业大学副校长、校长，研究生导师，享受国务院特殊津贴，任国家教育部高级职称评定权审定委员会委员、中国教育国际交流协会理事、国家科技评奖委员会委员等职。2000年至今任新华学院院长职务。
-  </p>
-  <p class="text">
-    王成福教授是我国材料科学方面的著名专家，在材料科学学科领域中开展科研工作，先后完成国家火炬计划、国家自然科学基金等国家及省部级课题10余项，多次获得科技成果奖，已发表学术论文70余篇。
-    他在科研工作中坚持自主创新，走艰苦创业道路，在科技成果转化中成绩显著，曾获得国家多项发明专利。其专利成果于1999年参与安徽省某新材料公司的项目在上海证交所正式上市，被誉为“安徽高校第一个吃螃蟹者”。
-    他在科研工作中坚持自主创新，走艰苦创业道路，在科技成果转化中成绩显著，曾获得国家多项发明专利。其专利成果于1999年参与安徽省某新材料公司的项目在上海证交所正式上市，被誉为“安徽高校第一个吃螃蟹者”。
-  </p>
-  <p class="text">
-    他在科研工作中坚持自主创新，走艰苦创业道路，在科技成果转化中成绩显著，曾获得国家多项发明专利。其专利成果于1999年参与安徽省某新材料公司的项目在上海证交所正式上市，被誉为“安徽高校第一个吃螃蟹者”。
-  </p>
-</div>
-```
-
-css 样式表
-
-```css
-<style>
-  .image {
-    height: 300px;
-    width: 300px;
-    margin-top: 50px;
-    border-radius: 50%;
-    right: 100px;
-    shape-outside: circle(150px at 50% 50%);
-    -webkit-shape-outside: circle(150px at 50% 50%);
-    float: right;
-    background: url('https://ss0.bdstatic.com/70cFvHSh_Q1YnxGkpoWK1HF6hhy/it/u=1551039200,1108067788&fm=26&gp=0.jpg');
-  }
-</style>
-```
 
 可以参考[shap-outline](https://wow.techbrood.com/fiddle/31483)
