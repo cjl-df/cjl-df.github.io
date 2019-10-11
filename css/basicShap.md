@@ -42,6 +42,27 @@ basic-shape是一种表现基础图形的 CSS 数据类型，作用于 clip-path
     **path 是一个 svg 图片的路径，这个图形就是这个 svg 图片 的边界**
   - 案例：
 
+  ```html
+    <svg>
+    <clipPath id="myPath">
+      <path
+        d="M82.44294954150537,38.19660112501052 A200 200 0 0 1 317.55705045849464 38.19660112501052 L200 200"
+      ></path>
+    </clipPath>
+  </svg>
+  <div class="sector"></div>
+  <style>
+    .sector {
+      height: 100px;
+      width: 350px;
+      clip-path: url(#myPath);
+      background-size: contain !important;
+      background-repeat: no-repeat;
+      background: url('https://ss0.bdstatic.com/70cFvHSh_Q1YnxGkpoWK1HF6hhy/it/u=1551039200,1108067788&fm=26&gp=0.jpg');
+    }
+  </style>
+  ```
+
   <br>
 
 #### css 裁剪路径 clip-path
@@ -60,7 +81,5 @@ shape-outside 的 CSS 属性定义了一个可以是非矩形的形状，相邻�
   - **shop-outside 并不会改变元素的边框，border,仅仅只是定义了一个形状边界，**
 
   - 案例 实现文字环绕图片
-
-
 
   - 可以参考[shap-outline](https://wow.techbrood.com/fiddle/31483)
