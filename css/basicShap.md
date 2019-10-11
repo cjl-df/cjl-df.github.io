@@ -43,6 +43,7 @@
   - 案例：
 
 ```
+<div>
 <svg>
 <clipPath id="myPath">
     <path
@@ -51,6 +52,7 @@
 </clipPath>
 </svg>
 <div class="sector"></div>
+</div>
 <style>
 .sector {
     height: 100px;
@@ -58,7 +60,7 @@
     clip-path: url(#myPath);
     background-size: contain !important;
     background-repeat: no-repeat;
-    background: url('https://ss0.bdstatic.com/70cFvHSh_Q1YnxGkpoWK1HF6hhy/it/u=1551039200,1108067788&fm=26&gp=0.jpg');
+    background: -url('https://ss0.bdstatic.com/70cFvHSh_Q1YnxGkpoWK1HF6hhy/it/u=1551039200,1108067788&fm=26&gp=0.jpg');
 }
 </style>
 ```
