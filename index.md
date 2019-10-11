@@ -39,6 +39,8 @@
   - [布局调试技巧](./css/layoutTips.md)
   
   - [css 图形](./css/basicShap.md)
+
+  - [css 背景渐变](./css/backgroundGradient.md)
   
 - #### router(路由)
 
