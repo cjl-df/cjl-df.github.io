@@ -38,7 +38,7 @@
   
   - [布局调试技巧](./css/layoutTips.md)
   
-  - [裁剪路径](./css/clipPath.md)
+  - [css 图形](./css/basicShap.md)
   
 - #### router(路由)
 
