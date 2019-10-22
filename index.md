@@ -26,7 +26,7 @@
   
   - [javascript 防抖、节流](./javascript/throttleAnddobounce.md)  
   
-  - [javascript 防抖、节流](./javascript/ParseInt.md)  
+  - [parseInt API](./javascript/ParseInt.md)  
   
 - #### HTML
 
