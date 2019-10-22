@@ -37,7 +37,7 @@
 
     ```
     let name = "test";
-    this.name = "haha";
+    this.name = "haha";  //这儿的this，并不是全局对象
     let test = {
     name: "cjl",
     sayHello: () => {
