@@ -57,7 +57,9 @@
   - [浏览器概述、多进程简介及 WebWorker 与 SharedWorker](./browse/theory.md)
 
   - [浏览器渲染进程,渲染、阻塞及 load 相关事件](./browse/render.md)
-
+   
+  - [HTTP 缓存](./browse/httpCache.md)
+  
 - #### 小程序
 
   - [微信小程序](./littlerApp/wxapp.md)
