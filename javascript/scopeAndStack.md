@@ -37,7 +37,7 @@
 
     ```
     let name = "test";
-    this.name = "haha";  //这儿的this，并不是全局对象
+    this.name = "haha";  //这儿的this，并不是全局对象;浏览器中默认的全局windows对象
     let test = {
     name: "cjl",
     sayHello: () => {
