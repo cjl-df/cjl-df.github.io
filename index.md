@@ -33,7 +33,9 @@
   - [资料](./html/material.md)
 
   - [meta 标签](./html/metaData.md)
-
+  
+  - [dom 全局属性](https://developer.mozilla.org/en-US/docs/Web/HTML/Global_attributes#attr-style)
+  
 - #### CSS
 
   - [资料](./css/material.md)
