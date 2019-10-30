@@ -34,7 +34,7 @@
 
   - [meta 标签](./html/metaData.md)
   
-  - [dom 全局属性](https://developer.mozilla.org/en-US/docs/Web/HTML/Global_attributes#attr-style)
+  - [dom 节点属性](https://developer.mozilla.org/en-US/docs/Web/HTML/Global_attributes#attr-style)
   
 - #### CSS
 
