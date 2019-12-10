@@ -73,6 +73,8 @@ class MyClass extends React.Component {
 
 这需要函数作为子元素（function as a child）这种做法。这个函数接收当前的 context 值，返回一个 React 节点。传递给函数的 value 值等同于往上组件树离这个 context 最近的 Provider 提供的 value 值。如果没有对应的 Provider，value 参数等同于传递给 createContext() 的 defaultValue。
 
-## 引用自：https://react.docschina.org/docs/context.html#classcontexttype
+## [引用自](https://react.docschina.org/docs/context.html#classcontexttype)
+
 请参考官方案例会更容易理解
-* [demo](./api_context/demo.md)
+
+- [demo](./api_context/demo.md)
