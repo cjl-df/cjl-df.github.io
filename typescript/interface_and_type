@@ -1,0 +1,91 @@
+## interface 与 type 区别
+
+- ### 支持的类型
+
+  ```
+  /**
+  * 支持类型
+  * 1.interface 支持定义【函数 类】
+  * 2.type 都支持
+  */
+  interface fn{
+    (x:number):number
+  }
+
+  interface ob{
+    name:string
+  }
+
+  type base = number
+
+  type tfn = ()=>{}
+  ```
+
+- ### 是否支持重新定义
+
+  ```
+  /**
+  * 合并接口 interface支持 type不支持
+  */
+  interface x{
+    name:string
+  }
+
+  interface x{
+    age:number
+  }
+
+  const z:x={
+    name:"sdfs",
+    age:2
+  }
+
+  type t= {
+    name:string
+  }
+
+  // 不允许
+  // type t={
+  //   age:number
+  // }
+  ```
+
+- ### 继承和组合
+
+  ```
+  /**
+  * 接口组合或者继承
+  * 1.interface 通过extends继承【interface type】
+  * 2.type 通过&继承【interface type】
+  */
+  interface p {
+    name:string
+  }
+
+  interface s extends p,t {
+    age:number
+  }
+
+  const k:s = {
+    name:"xtt",
+    age:27
+  }
+
+  type t1 = {name:string}
+
+  type t2 = {age:number} & t1 & p
+
+  const t3:t2 = {name:"sdfs",age:23}
+  ```
+
+- ### 实现
+
+  ```
+  /**
+  * 类可以实现interface和type
+  */
+  class Person implements p,t2{
+    name:"张三"
+    age:23
+  }
+  ```
