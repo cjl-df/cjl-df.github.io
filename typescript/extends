@@ -1,0 +1,110 @@
+## ts extends 关键字
+
+- ### 接口 interface 继承
+
+  ```
+  interface Person{
+    name:string
+  }
+
+  interface Man extends Person{
+    six:"man"
+  }
+  ```
+
+- ### 泛型约束
+
+  ```
+  function getCnames<T extends { name: string }>(entities: T[]):string[] {
+    return entities.map(entity => entity.name)
+  }
+
+  interface Dispatch<T extends { type: string }> {
+    (action: T): T
+  }
+  ```
+
+- ### 条件类型
+
+  `SomeType extends OtherType ? TrueType : FalseType; When the type on the left of the extendsis assignable to the one on the right, then you’ll get the type in the first branch (the “true” branch); otherwise you’ll get the type in the latter branch (the “false” branch).`
+
+  ```
+  type Human = {
+    name: string;
+  }
+  type Duck = {
+    name: string;
+  }
+  type Bool = Duck extends Human ? 'yes' : 'no'; // Bool => 'yes'
+
+  // type Human = {
+  //   name: string;
+  //   occupation: string;
+  // }
+  // type Duck = {
+  //   name: string;
+  // }
+  // type Bool = Duck extends Human ? 'yes' : 'no'; // Bool => 'no'
+  ```
+
+- ### 条件类型中，使用泛型&泛型是联合类型
+
+  ```
+  type A1 = 'x' extends 'x' ? string : number; // string
+  type A2 = 'x' | 'y' extends 'x' ? string : number; // number
+
+  type P<T> = T extends 'x' ? string : number;
+  type A3 = P<'x' | 'y'>  // A3的类型是 string | number
+  ```
+
+  `When conditional types act on a generic type, they become distributive when given a union type`
+
+  // 翻译
+
+  `对于使用extends关键字的条件类型（即上面的三元表达式类型），如果extends前面的参数是一个泛型类型，当传入该参数的是联合类型，则使用分配律计算最终的结果。分配律是指，将联合类型的联合项拆成单项，分别代入条件类型，然后将每个单项代入得到的结果再联合起来，得到最终的判断结果。`
+
+- ### 高阶类型
+
+  - Exclude
+
+    ```
+    type A = Exclude<'key1' | 'key2', 'key2'> // 'key1'
+    ```
+
+    Exclude 的定义是
+
+    ```
+    type Exclude<T, U> = T extends U ? never : T
+    ```
+
+  - Extract
+
+    ```
+    type A = Extract<'key1' | 'key2', 'key1'> // 'key1'
+    ```
+
+    Extract 的定义是
+
+    ```
+    type Extract<T, U> = T extends U ? T : never
+    ```
+
+  - Pick
+
+    ```
+    interface A {
+        name: string;
+        age: number;
+        sex: number;
+    }
+
+    type A1 = Pick<A, 'name'|'age'>
+    ```
+
+    高级类型 Pick 的定义
+
+    ```
+    type Pick<T, K extends keyof T> = {
+        [P in K]: T[P]
+    }
+    ```
