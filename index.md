@@ -97,7 +97,7 @@
   - [消息推送 websocket](./消息推送/websocket.md)
  
 - #### vscode开发工具
-  - [设置](./工具/vscode.md)
+  - [设置](./工具/setting.md)
 
 - #### 资料
 
