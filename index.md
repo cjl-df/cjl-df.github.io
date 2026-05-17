@@ -27,6 +27,7 @@
   - [javascript 防抖、节流](./javascript/throttleAnddobounce.md)
 
   - [parseInt API](./javascript/ParseInt.md)
+  - [浅析Js之 “作用域链与原型链“篇](https://juejin.cn/post/6844903896469635086?share_token=3f744173-7885-42b7-8474-2adb583720be)
 
 - #### HTML
 
