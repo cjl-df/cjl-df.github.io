@@ -1,5 +1,9 @@
 ### 前段知识博客
 
+- #### PYTHON、数据科学、AI及相关实践
+
+  - [数据科学、AI及相关实践](./python/学习资料.md)
+
 - #### JAVASCRIPT
 
   - [forof iterator 及 generator](./javascript/generator.md)
